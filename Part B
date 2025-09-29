@@ -24,9 +24,10 @@ public class Main {
         System.out.println("Students scoring above 75%, sorted by marks:");
 
         students.stream()
-                .filter(s -> s.marks > 75)                 // Filter marks > 75
-                .sorted(Comparator.comparingDouble(s -> s.marks)) // Sort by marks ascending
-                .map(s -> s.name)                         // Extract names
-                .forEach(System.out::println);            // Display names
-    }
+                .filter(s -> s.marks > 75)                 
+                .sorted(Comparator.comparingDouble(s -> s.marks))
+                .map(s -> s.name)                         
+                .forEach(System.out::println);     
+     }       
+    
 }
